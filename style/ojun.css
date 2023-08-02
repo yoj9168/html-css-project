@@ -6,10 +6,14 @@ nav{
 }
 .logoImg img{
     width: 170px;
+    margin-left: 10px;
+}
+.navImg{
+    margin: 27px 30px;
 }
 .navImg img{
-    width: 50px;
-    margin-top: 17px;
+    width: 30px;
+    margin-right: 5px;
 }
 .main_menu{
     text-decoration: none;
