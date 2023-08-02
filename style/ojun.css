@@ -1,0 +1,18 @@
+nav{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logoImg img{
+    width: 170px;
+}
+.navImg img{
+    width: 50px;
+    margin-top: 17px;
+}
+.main_menu{
+    text-decoration: none;
+    margin-top: 30px;
+}
+
