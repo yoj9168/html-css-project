@@ -95,7 +95,7 @@
     }
     .chatInput{
         height: 50px;
-        margin: 40px;
+        margin: 2vw;
         width: 80vw;
         display: flex;
         flex-direction: row;
@@ -107,7 +107,7 @@
     }
     .chatInput .chatSubmit{
         margin-top: 0.7vh;
-        width: 10vw;
+        width: 15vw;
         height: 3vh;
         margin-left: 1.7vw;
         border-radius: 10px;
@@ -360,18 +360,17 @@
         }
         .chatInput{
             height: 50px;
-            margin: 40px;
             width: 80vw;
         }
         .chatInput #chatInputText{
+            margin-left: -3vw;
             width: 30vw;
             height: 4vh;
             border-radius: 40px;
         }
         .chatInput .chatSubmit{
-            width: 3vw;
+            width: 5vw;
             height: 3vh;
-            margin-left: 0.5vw;
             border-radius: 10px;
         }
         .check{
