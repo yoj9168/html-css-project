@@ -12,10 +12,14 @@
         justify-content: space-between;
         border-bottom: 1px solid silver;
     }
+    .backImg img{
+        display: inline;
+        width: 60px;
+        margin-top: 10px;
+        margin-left: -40vw;
+    }
     .logoImg img{
-        content: url(../img/back.png);
-        width: 50px;
-        margin-top: 15px;
+        display: none;
     }
     .main_menu{
         display: none;
@@ -68,10 +72,11 @@
     }
     .chatRoomLayout{
         display: none;
-        height: 70vh;
         border-right: 1px solid silver;
-        overflow: scroll;
-        width: 30vw;
+        width: 100vw;
+    }
+    .chatRoomLayout a{
+        text-decoration: none;
     }
     .chatInfo{
         border-bottom: 1px solid silver;
@@ -104,6 +109,12 @@
         margin-left: 1.7vw;
         border-radius: 10px;
     }
+    .unvisible{
+        display: none;
+    }
+    .visible{
+        display: block;
+    }
 
 }
 @media screen and (min-width: 768px),
@@ -118,6 +129,9 @@
             flex-direction: row;
             justify-content: space-between;
             border-bottom: 1px solid silver;
+        }
+        .backImg{
+            display: none;
         }
         .logoImg img{
             display: block;
@@ -246,6 +260,9 @@
             justify-content: space-between;
             border-bottom: 1px solid silver;
         }
+        .backImg{
+            display: none;
+        }
         .logoImg img{
             content: url(../img/logo.png);
             width: 170px;
@@ -358,7 +375,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 0 8vw;
+            margin: 0 5vw;
         }
         .infomation{
             width: 30vw;
