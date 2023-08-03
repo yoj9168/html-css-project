@@ -159,7 +159,7 @@
   }
   .room-book-box button{
     height: 50px;
-    width: 110px;
+    width: 100%;
     border-radius: 10px;
     color: white;
     font-weight: bolder;
@@ -273,6 +273,8 @@
     font-weight: bolder;
     background:linear-gradient(to right,#D23752,#C52A66);
     font-size: 1.1rem;
+   
+  
   }
   
   .table{
@@ -281,6 +283,7 @@
   #room-book-box-sum{
     display: none;
   }
+  
   
   
   
@@ -320,8 +323,16 @@
     width: 100%;
     height: 100%;
   }
+  #review-btn-wrapper{
+    padding:1rem 0 0 0;
+  }
   #review-button{
-    display: none;
+    background-color: white;
+    width:100%;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    display: inline-block;
+    border: 1px solid #9f9d9d;
   }
   
   /* 3.6 호스트 소개 페이지  */
@@ -359,6 +370,13 @@
     padding-left : 1rem;
   }
   
+  
+  
+  #review-button:hover{
+    background-color: #f8f3f3;
+  }
+  
+  
   }
   
   /* 
@@ -368,6 +386,9 @@
   ######################################################## */
   
   @media screen and (min-width:768px), screen and (min-height:1023px) and (orientation :landscape) {
+    .home-imgs img:hover{
+      filter: brightness(80%);
+    } 
     /* 헤더 Nav css */
     /* 헤더 조정했던거 돌려놓기  */
   .wrapper1{
@@ -404,6 +425,9 @@
   #back-icon{
     display: none;
   }
+  #back-img{
+    border: none;
+  }
   div.social1{
     display: none;
   }
@@ -421,10 +445,9 @@
     width: 170px;
   }
   .navImg img{
-    width: 50px;
+    width: 45px;
     margin-top: 9px;
     
-  
   }
   
   .main_menu{
@@ -459,25 +482,34 @@
     
    
   }
+  div.social2 img{
+    width: 20px;
+  }
+  div.social2 p{
+    font-size: 0.5rem;
+  }
   div.social2 ul li {
     display: inline-block;
   
   }
   div.social2 ul li a{
+    padding: 0.4rem;
     text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 25%;
     
+  }
+  div.social2 ul li a:hover{
+    background-color: #f8f3f3;
   }
   div.social2 ul li p{
     margin:0 auto;
     
     
   }
-  div.social2 img{
-    /* margin-left: 1%; */
-  }
+  
   
   #room-book-box{
     
@@ -567,7 +599,7 @@
     height: 300px;
     align-items: center;
     padding:0 40px 0 40px ;
-    border: 1px solid transparent;
+    border: 1px solid #f8f3f3;
     box-shadow: 0px 10px 14px -7px #e67a73;
     border-radius: 2rem;
   
@@ -582,9 +614,10 @@
     font-weight: bolder;
     
   }
+  /* 여기가 작동.. */
   .room-book-box button{
     height: 50px;
-    width: 110px;
+    width: 100%;
     border-radius: 10px;
     color: white;
     font-weight: bolder;
