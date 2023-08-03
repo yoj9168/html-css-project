@@ -404,16 +404,18 @@
     }
   }
 
+  /* /////////////////////////////////////// */
   /*** 웹 ***/
   @media screen and (min-width: 1024px),
-    screen and (max-height: 1024px) and (orientation: landscape) {
+    screen and (min-height: 760px) and (max-height: 1023px) and (orientation: landscape) {
     .wrap {
-      font-family: "Nanum Gothic", sans-serif;
       width: 100%;
+      font-family: "Nanum Gothic", sans-serif;
     }
     .main_menu {
-      margin-top: 20px;
+      margin-top: 18px;
     }
+
     nav {
       width: 100%;
       height: 80px;
@@ -441,55 +443,48 @@
       width: 35px;
       margin-bottom: 30px;
     }
+    .main_menu {
+      display: inline-block;
+      text-decoration: none;
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
 
     .hideMobile {
       display: inline-block;
     }
 
     .hideTabletNhideMobile {
-      display: inline-block;
-    }
-
-    .iconlist,
-    li a {
-      text-align: center;
-      display: inline-block;
-      list-style: none;
-      text-decoration: none;
-      color: #717171;
-      font-size: 12px;
-      font-weight: bold;
-      padding-right: 32px;
-    }
-    .hidelast {
       display: none;
     }
     .iconlist li {
-      display: flex;
-      justify-content: space-between;
       padding-top: 8px;
-      padding-right: 70px;
-      flex-wrap: nowrap;
+      padding-right: 20px;
     }
 
     .iconlist {
+      width: 400vh;
       text-align: center;
       display: flex;
       justify-content: space-between;
-      padding: 10px 0px 10px 158px;
+      padding: 10px 0px 10px 68px;
       flex-wrap: wrap;
     }
 
     .arrow {
-      width: 12px;
-      height: 12px;
+      width: 12vw;
+      height: 12vw;
       text-align: center;
       margin-top: 4px;
     }
 
     .filter {
-      width: 24px;
-      height: 16px;
+      width: 24vw;
+      height: 16vw;
       text-align: center;
       padding: 4px 2px 0px 14px;
     }
@@ -502,6 +497,7 @@
       color: #717171;
       font-size: 12px;
       font-weight: bold;
+      flex-wrap: nowrap;
     }
 
     button {
@@ -513,17 +509,30 @@
     .arrowbutton {
       position: relative;
       bottom: -5px;
-      width: 2vw;
-      height: 2vw;
+      width: 28px;
+      height: 28px;
       border-radius: 100px;
     }
 
     .filterbutton {
       position: relative;
       bottom: 3px;
-      height: 3.33vw;
+      height: 48px;
       border-radius: 8px;
       padding: 5px 7px 7px 7px;
+    }
+
+    .img {
+      width: 44vw;
+      height: 42.735vw;
+      border-radius: 10px;
+    }
+
+    .filter {
+      width: 14px;
+      height: 14px;
+      text-align: center;
+      padding: 4px 2px 0px 14px;
     }
 
     .detail {
@@ -534,11 +543,6 @@
     span {
       padding-right: 14px;
     }
-    .img {
-      width: 21vw;
-      height: 19.735vw;
-      border-radius: 20px;
-    }
 
     .arrow {
       width: 12px;
@@ -547,21 +551,14 @@
       margin-top: 4px;
     }
 
-    .filter {
-      width: 14px;
-      height: 14px;
-      text-align: center;
-      padding: 4px 2px 0px 14px;
-    }
-
-    .item {
-      padding-bottom: 40px;
-    }
-
     hr {
       height: 1px;
       background-color: #ddd;
       border: 0;
+    }
+
+    .item {
+      padding-bottom: 40px;
     }
 
     .host,
@@ -580,10 +577,14 @@
 
     section {
       margin-top: 16px;
-      padding: 0px 30px;
+      padding: 0px 20px;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
+    }
+
+    .default {
+      padding: 0px 40px;
     }
 
     .inform {
@@ -597,41 +598,35 @@
 
     .footerabout {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       flex-wrap: wrap;
-      padding: 10px 0;
-    }
-
-    .footerabout p,
-    .footerabout ul {
-      margin: 0;
-      padding: 0 5px;
-    }
-
-    .footerlist,
-    .krw {
-      display: flex;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
     }
 
     .footerlist {
-      justify-content: flex-start;
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
     }
 
     .krw {
-      justify-content: flex-end;
-    }
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
 
+      list-style: none;
+    }
+    .footerp,
     .footerlist li,
     .krw li {
-      margin-right: 3px;
-    }
-
-    .krw li a {
-      color: black;
+      padding: 5px;
     }
   }
 }
