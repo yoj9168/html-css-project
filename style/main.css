@@ -54,9 +54,6 @@
   .hideMobile {
     display: none;
   }
-  .hideTabletNhideMobile {
-    display: none;
-  }
 
   .iconlist {
     display: flex;
@@ -232,9 +229,6 @@
       display: inline-block;
     }
 
-    .hideTabletNhideMobile {
-      display: none;
-    }
     .iconlist li {
       padding-top: 8px;
       padding-right: 20px;
@@ -245,7 +239,7 @@
       text-align: center;
       display: flex;
       justify-content: space-between;
-      padding: 10px 0px 10px 68px;
+      padding: 10px 40px 10px 60px;
       flex-wrap: wrap;
     }
 
@@ -458,9 +452,6 @@
       display: inline-block;
     }
 
-    .hideTabletNhideMobile {
-      display: none;
-    }
     .iconlist li {
       padding-top: 8px;
       padding-right: 30px;
@@ -514,6 +505,9 @@
       border-radius: 100px;
     }
 
+    .hideTablet {
+      padding: 8px 0px 0px 0px;
+    }
     .filterbutton {
       position: relative;
       bottom: 3px;
