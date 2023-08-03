@@ -22,658 +22,613 @@
   } */
 
 
-  body{
-    font-family:  "Nanum Gothic", sans-serif;
-  }
-@media screen and (min-width:320px) ,screen and(min-height:750px)
-and (orientation:landscape){
-  .wrapper2{
+  @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+  @media screen and (min-width:320px) ,screen and(min-height:750px)
+  and (orientation:landscape){
     
-    width: 100%;
-    padding-left: 0%;
-    margin: 0 auto;
-    margin-left: 5%;
-    /* width: 90%; */
-    /* display: flex;
-    flex-direction: column;
-    margin: 0;
-    flex-wrap: wrap;
-    align-items: center; */
-  }
-  header{
-    background-color:transparent ;
-    width: 100%;
-    position: relative;
-    
-  }
-  nav{
-    margin: 0 auto;
-    height: 64px;
-    
+    body{
+      font-family:  "Nanum Gothic", sans-serif;
+    }
+    .wrapper2{
+      
+      width: 100%;
+      padding-left: 0%;
+      margin: 0 auto;
+      margin-left: 5%;
+      /* width: 90%; */
+      /* display: flex;
+      flex-direction: column;
+      margin: 0;
+      flex-wrap: wrap;
+      align-items: center; */
+    }
+    header{
+      background-color:transparent ;
+      width: 100%;
+      position: relative;
+      
+    }
   
+    nav{
+      margin: 0 auto;
+      height: 64px;  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      top:0;
+      position: fixed;
+    }
+  
+    #back-img{
+      width: 35px;
+      display: inline-block;
+      border-radius: 70%;
+      background-color: white;
+      overflow: hidden;
+      border :1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 7px 5px 16px -6px rgba(0,0,0,0.33);
+      -webkit-box-shadow: 7px 5px 16px -6px rgba(0,0,0,0.33);
+      -moz-box-shadow: 7px 5px 16px -6px rgba(0,0,0,0.33);
+    }
+    #back-icon{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    div.social1{
+      margin-right: 1rem;
+       
+    }
+    div.social1 img{
+      width: 30px;
+      
+  
+      
+  
+    }
+  
+  
+    .header-nav-icons{
+      display: none;
+    }
+  
+  /* 소셜2아이콘 숨김 */
+  div.social2{
+    display: none;
+  }
+  
+  div.main-img img{
+    width: 100%;
+    /* border-radius: 1rem; */
+  }
+  div.sub-img img{
+    display: none;
+  }
+  
+  div.room-detail{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* 3. 상세 설명 페이지 조정  */
+  .room-detail-content{
+    width: 90%;
+    
+  }
+  div.line{
+    background:   black;     /* #D9D9D9;*/
+    margin-bottom: 1rem;
+    height: 1px;
+    
+  }
+  div.line_special{
+    background:   black;     /* #D9D9D9;*/
+    margin-bottom: 1rem;
+    height: 1px;
+  }
+  
+  /* 3.1 예약 페이지 설정  */
+   
+  .room-book-box{
+    background-color: #D9D9D9;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-   
-    top:0;
+  
+    width: 100%;
+    margin-left : 0%;
     position: fixed;
+    bottom: 0;
+    height: 90px;
+    align-items: center;
+    padding:0 40px 0 40px ;
+  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box; 
+    
   }
-  #back-img{
-    width: 40px;
-    display: inline-block;
+  #room-book-box-price{
+    font-weight: bolder;
+    
   }
-  div.social1{
-    margin-right: 1rem;
+  .room-book-box button{
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    background:linear-gradient(to right,#D23752,#C52A66);
+    font-size: 1.1rem;
   }
-  div.social1 img{
-    width: 30px;
-
-  }
-  .header-nav-icons{
+  
+  .table{
+    
     display: none;
   }
-
-/* 소셜2아이콘 숨김 */
-div.social2{
-  display: none;
-}
-
-div.main-img img{
-  width: 100%;
-  /* border-radius: 1rem; */
-}
-div.sub-img img{
-  display: none;
-}
-
-div.room-detail{
-  display: flex;
-  flex-direction: row;
-}
-
-/* 3. 상세 설명 페이지 조정  */
-.room-detail-content{
-  width: 90%;
-  
-}
-div.line{
-  background:   black;     /* #D9D9D9;*/
-  margin-bottom: 1rem;
-  height: 1px;
-  
-}
-div.line_special{
-  background:   black;     /* #D9D9D9;*/
-  margin-bottom: 1rem;
-  height: 1px;
-}
-
-/* 3.1 예약 페이지 설정  */
- 
-.room-book-box{
-  background-color: #D9D9D9;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  width: 100%;
-  margin-left : 0%;
-  position: fixed;
-  bottom: 0;
-  height: 90px;
-  align-items: center;
-  padding:0 40px 0 40px ;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;  
-  box-sizing: border-box; 
-  
-}
-#room-book-box-price{
-  font-weight: bolder;
-  
-}
-.room-book-box button{
-  height: 50px;
-  width: 110px;
-  border-radius: 10px;
-  color: white;
-  font-weight: bolder;
-  background:linear-gradient(to right,#D23752,#C52A66);
-  font-size: 1.1rem;
-}
-
-.table{
-  
-  display: none;
-}
-#room-book-box-sum{
-  display: none;
-}
-
-/* 3.0 제목 숨기기 ㅎ  */
-.home_title{
-  display: none;
-
-}
-.home_title2{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-bottom: 1rem;
-}
-
-/* 3.2 호스팅 파트 설정  */
-#room-host-img{
-  width: 80px;
-  height: 80px; 
-  border-radius: 70%;
-  overflow: hidden;
-}
-#room-host-img img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-#room-host{
-  padding: 2%;
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-
-/* 3.3 상세 설명 페이지  */
-#room-description{
-  padding: 3%;
-}
-
-/* 3.4 달력 파트 설정  */
-#room-calender{
-  padding : 3%
-}
-#room-calender img{
-  width: 100%;
-}
-#calendar2{
-  display: none;
-}
-
-/* 하단 파트 크기 조정  */
-.room-detail-bottom{
-  
-  width:90%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-
-}
-
-
-
-/* 3.1 예약 페이지 설정  */
- 
-.room-book-box{
-  background-color: #D9D9D9;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  width: 100%;
-  margin-left : -5%;
-  position: fixed;
-  bottom: 0;
-  height: 90px;
-  align-items: center;
-  padding:0 40px 0 40px ;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;  
-  box-sizing: border-box; 
-  
-}
-#room-book-box-price{
-  font-weight: bolder;
-  
-}
-.room-book-box button{
-  height: 50px;
-  width: 110px;
-  border-radius: 10px;
-  color: white;
-  font-weight: bolder;
-  background:linear-gradient(to right,#D23752,#C52A66);
-  font-size: 1.1rem;
-}
-
-.table{
-  display: none;
-}
-#room-book-box-sum{
-  display: none;
-}
-
-
-
-
-
-
-
-/* 3.5 후기파트 설정  */
-.room-review{
-  display: flex;
-  flex-direction: column;
-
-}
-.room-review >div:first-child {
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-.room-review>div{
-  padding: 3%;
-}
-.room-rivew-detail1{
-  border: 1px solid    black;    /* #ece8e8;*/
-  border-radius: 0.8rem;
-}
-
-.room-rivew-detail{
-  display: none;
-}
-div.user-profile{
-  width: 80px;
-  height: 80px; 
-  border-radius: 70%;
-  overflow: hidden;
-}
-div.user-profile img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-#review-button{
-  display: none;
-}
-
-/* 3.6 호스트 소개 페이지  */
-.host-bottom{
-  margin-top: 6%;
-  margin-bottom: 6%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#room-host-img2{
-  width: 80px;
-  height: 80px; 
-  border-radius: 70%;
-  overflow: hidden;
-}
-#room-host-img2 img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.host-detail-introduce{
-  line-height: 1.6rem
-}
-
-
-
-footer{
-  background-color: blanchedalmond;
-  width: 800px;
-  height: 100px;
-  margin-bottom: 100px;
-  display: flex;
-  align-items: center;
-  padding-left : 1rem;
-}
-
-}
-
-/* 
-
-########################################################
-########################################################
-######################################################## */
-
-@media screen and (min-width:768px), screen and (min-height:1023px) and (orientation :landscape) {
-  /* 헤더 Nav css */
-  /* 헤더 조정했던거 돌려놓기  */
-.wrapper1{
-  width: 80%;
-  margin : 0 auto;
-}
-.wrapper2{
-  width: 100%;
-  margin: 0 auto;
-
-}
-header{
-  position: static;
-  border-bottom: 1px solid #ece8e8;
-  background-color: white;
-}
-.logoImg{
-  position:fixed;
-  right: 80%;
-}
-.header-nav-icons{
-  display: inline-block;
-}
-#back-icon{
-  display: none;
-}
-div.social1{
-  display: none;
-}
-nav{
-  width: 100%;
-  position: static;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
- 
-  top: initial;
-}
-.logoImg img{
-  width: 170px;
-}
-.navImg img{
-  width: 50px;
-  margin-top: 17px;
-}
-.main_menu{
-  color: black;
-  text-decoration: none;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-div.line_special{
-  display: none;
-}
-
-/* 그림 위의 제목~     소셜2 아이콘css */
-div.home_title{
-  width: 70%;
-}
-div.social2 {
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-left:3px;
-  margin-top: auto
-
-  
-}
-div.social2 ul{
-  list-style: none;
-
-  
- 
-}
-div.social2 ul li {
-  display: inline-block;
-
-}
-div.social2 ul li a{
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-}
-div.social2 ul li p{
-  margin:0 auto;
-  
-  
-}
-div.social2 img{
-  /* margin-left: 1%; */
-}
-
-#room-book-box{
-  
-  border: 1px solid #D9D9D9;
-  height: 30vh;
-  border-radius: 2vh;
-}
-
-/* 1. 제목 부분 배치하기  */
-.title{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 2%;
-}
-
-.social2 img{
-  width: 24px;
-  height: 24px;
-}
-
-/* 2. 그림 수정  */
-div.home-imgs{
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-div.main-img{
-  width:55%;
-  padding-bottom: 0.3%;
-}
-div.main-img img{
-  width: 100%;
-  height: 100%;
-  /* border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem; */
-  border-radius: 0.7rem;
-  
-}
-.sub-img{
- width: 45%;
- /* height: 45%; */
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
-}
-
-div.sub-img img{
- display: inline-block;
- border-radius: 0;
- width: 48%;
- padding-left: 1%;
- padding-bottom: 1%;
-}
-
-
-/* 3.0 제목 숨기기 ㅎ  */
-.home_title{
-  display: block;
-
-}
-.home_title2{
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-
-/* 예약페이지 **** */
-.room-detail{
-  width: 100%;
-  margin: 0 auto;
-  position:relative;
-}
-.room-book-box{
-  background-color:  white;  /*     #D9D9D9; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 50%;
-  margin-left : 5%;
-  margin-right: 5%;
-  position:sticky;
-  top: 0;
-  /* bottom: 0; */
-  height: 300px;
-  align-items: center;
-  padding:0 40px 0 40px ;
-  border: 1px solid transparent;
-  box-shadow: 0px 10px 14px -7px #e67a73;
-  border-radius: 2rem;
-
-
-
-  -webkit-box-sizing: border-box;   
-  -moz-box-sizing: border-box;  
-  box-sizing: border-box; 
-  
-}
-#room-book-box-price{
-  font-weight: bolder;
-  
-}
-.room-book-box button{
-  height: 50px;
-  width: 110px;
-  border-radius: 10px;
-  color: white;
-  font-weight: bolder;
-  background:linear-gradient(to right,#D23752,#C52A66);
-  font-size: 1.1rem;
-}
-
-.table{
-  border: 1px solid #ece8e8;
-  border-radius: 1rem;
-  width: 100%;
-  display: block;
-  font-size: 1rem;
-  
-  
-}
-.table-1 {
-  font-size: 0.8rem;
-  padding: 0.5rem 0.5rem 1rem 0.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-}
-.table-1 div{
-  margin:0 auto
-}
-.table-2{
-  padding: 0.5rem 0.5rem 1rem 0.5rem;
-  text-align: center;
-}
-
-#room-book-box-sum{
-  display: block;
-}
-
-
-
-
-/* 달력 한개만 보여줘 */
-#calendar2{
-  display: none;
-}
-
-
-#room-calender{
-  width: 100%;
-  padding : 3%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#room-calender img{
-  width: 100%;
-}
-#calendar2{
-  display: none;
-}
-
-
-
-.room-rivew-detail{
-  display: block;
-}
-
-
-
-
-/* 3.5 후기파트 설정  */
-.room-review{
-  display: flex;
-  flex-direction: column;
-
-}
-.room-review>div{
-  padding: 3%;
-}
-.room-rivew-detail1{
- border:none;
-}
-
-.room-rivew-detail{
-  display: block;
-}
-div.user-profile{
-  width: 80px;
-  height: 80px; 
-  border-radius: 70%;
-  overflow: hidden;
-}
-div.user-profile img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-#review-button{
-  display: block;
-  width: 20%;
-  background-color: white;
-  border: 1px solid black;
-  padding: 0.9rem;
-  border-radius: 0.5rem;
-  font-weight: bolder;
-}
-
-/* 테블릿화면 끝  */
-footer{
-  width: 100%;
-  margin:0 auto;
-  padding-left: 2rem;
-  margin-top:1rem
-}
-}
-
-
-
-@media screen and (min-width:1024px) {
-  
-  .wrapper2{
-    max-width: 1000px;
+  #room-book-box-sum{
+    display: none;
   }
-/* 
-  달력 다시 보여주기  */
-
+  
+  /* 3.0 제목 숨기기 ㅎ  */
+  .home_title{
+    display: none;
+  
+  }
+  .home_title2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+  }
+  
+  /* 3.2 호스팅 파트 설정  */
+  #room-host-img{
+    width: 80px;
+    height: 80px; 
+    border-radius: 70%;
+    overflow: hidden;
+  }
+  #room-host-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #room-host{
+    padding: 2%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  
+  /* 3.3 상세 설명 페이지  */
+  #room-description{
+    padding: 3%;
+  }
+  
+  /* 3.4 달력 파트 설정  */
+  #room-calender{
+    padding : 3%
+  }
+  #room-calender img{
+    width: 100%;
+  }
+  #calendar2{
+    display: none;
+  }
+  
+  /* 하단 파트 크기 조정  */
+  .room-detail-bottom{
+    
+    width:90%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  
+  }
+  
+  
+  
+  /* 3.1 예약 페이지 설정  */
+   
+  .room-book-box{
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    width: 100%;
+    margin-left : -5%;
+    margin-top: 1rem;
+    position: fixed;
+    bottom: 0;
+    height: 90px;
+    align-items: center;
+    padding:0 40px 0 40px ;
+  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box; 
+    
+  }
+  #room-book-box-price{
+    font-weight: bolder;
+    
+  }
+  
+  .room-book-box button{
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    background:linear-gradient(to right,#D23752,#C52A66);
+    font-size: 1.1rem;
+  }
+  
+  .table{
+    display: none;
+  }
+  #room-book-box-sum{
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* 3.5 후기파트 설정  */
+  .room-review{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .room-review >div:first-child {
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  .room-review>div{
+    padding: 3%;
+  }
+  .room-rivew-detail1{
+    border: 1px solid    black;    /* #ece8e8;*/
+    border-radius: 0.8rem;
+  }
+  
+  .room-rivew-detail{
+    display: none;
+  }
+  div.user-profile{
+    width: 80px;
+    height: 80px; 
+    border-radius: 70%;
+    overflow: hidden;
+  }
+  div.user-profile img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #review-button{
+    display: none;
+  }
+  
+  /* 3.6 호스트 소개 페이지  */
+  .host-bottom{
+    margin-top: 6%;
+    margin-bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #room-host-img2{
+    width: 80px;
+    height: 80px; 
+    border-radius: 70%;
+    overflow: hidden;
+  }
+  #room-host-img2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .host-detail-introduce{
+    line-height: 1.6rem
+  }
+  
+  
+  
+  footer{
+    background-color: blanchedalmond;
+    width: 800px;
+    height: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    padding-left : 1rem;
+  }
+  
+  }
+  
+  /* 
+  
+  ########################################################
+  ########################################################
+  ######################################################## */
+  
+  @media screen and (min-width:768px), screen and (min-height:1023px) and (orientation :landscape) {
+    /* 헤더 Nav css */
+    /* 헤더 조정했던거 돌려놓기  */
+  .wrapper1{
+    width: 80%;
+    margin : 0 auto;
+  }
+  .wrapper2{
+    width: 100%;
+    margin: 0 auto;
+  
+  }
+  header{
+    position: static;
+    border-bottom: 1px solid #ece8e8;
+    background-color: white;
+  }
+  .logoImg{
+    position: absolute;
+    right: 80%;
+  }
+  
+  .main_menu{
+    position: absolute;
+    right:40%;
+    top:1%;
+    text-align: center;
+  }
+  
+  
+  .header-nav-icons{
+    display: inline-block;
+    
+  }
+  #back-icon{
+    display: none;
+  }
+  div.social1{
+    display: none;
+  }
+  nav{
+    width: 100%;
+    
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+    top: initial;
+  }
+  .logoImg img{
+    width: 170px;
+  }
+  .navImg img{
+    width: 50px;
+    margin-top: 9px;
+    
+  
+  }
+  
+  .main_menu{
+    color: black;
+    text-decoration: none;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div.line_special{
+    display: none;
+  }
+  
+  /* 그림 위의 제목~     소셜2 아이콘css */
+  div.home_title{
+    width: 70%;
+  }
+  div.social2 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:3px;
+    margin-top: auto
+  
+    
+  }
+  div.social2 ul{
+    list-style: none;
+  
+    
+   
+  }
+  div.social2 ul li {
+    display: inline-block;
+  
+  }
+  div.social2 ul li a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  div.social2 ul li p{
+    margin:0 auto;
+    
+    
+  }
+  div.social2 img{
+    /* margin-left: 1%; */
+  }
+  
+  #room-book-box{
+    
+    border: 1px solid #D9D9D9;
+    height: 30vh;
+    border-radius: 2vh;
+  }
+  
+  /* 1. 제목 부분 배치하기  */
+  .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+  
+  .social2 img{
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* 2. 그림 수정  */
+  div.home-imgs{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  div.main-img{
+    width:55%;
+    padding-bottom: 0.3%;
+  }
+  div.main-img img{
+    width: 100%;
+    height: 100%;
+    /* border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem; */
+    border-radius: 0.7rem;
+    
+  }
+  .sub-img{
+   width: 45%;
+   /* height: 45%; */
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+  }
+  
+  div.sub-img img{
+   display: inline-block;
+   border-radius: 0;
+   width: 48%;
+   padding-left: 1%;
+   padding-bottom: 1%;
+  }
+  
+  
+  /* 3.0 제목 숨기기 ㅎ  */
+  .home_title{
+    display: block;
+  
+  }
+  .home_title2{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  
+  /* 예약페이지 **** */
+  .room-detail{
+    width: 100%;
+    margin: 0 auto;
+    position:relative;
+  }
+  .room-book-box{
+    background-color:  white;  /*     #D9D9D9; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    margin-left : 5%;
+    margin-right: 5%;
+    position:sticky;
+    top: 0;
+    /* bottom: 0; */
+    height: 300px;
+    align-items: center;
+    padding:0 40px 0 40px ;
+    border: 1px solid transparent;
+    box-shadow: 0px 10px 14px -7px #e67a73;
+    border-radius: 2rem;
+  
+  
+  
+    -webkit-box-sizing: border-box;   
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box; 
+    
+  }
+  #room-book-box-price{
+    font-weight: bolder;
+    
+  }
+  .room-book-box button{
+    height: 50px;
+    width: 110px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    background:linear-gradient(to right,#D23752,#C52A66);
+    font-size: 1.1rem;
+  }
+  
+  .table{
+    border: 1px solid #ece8e8;
+    border-radius: 1rem;
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    
+    
+  }
+  .table-1 {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .table-1 div{
+    margin:0 auto
+  }
+  .table-2{
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    text-align: center;
+  }
+  
+  #room-book-box-sum{
+    display: block;
+  }
+  
+  
+  
+  
+  /* 달력 한개만 보여줘 */
+  #calendar2{
+    display: none;
+  }
+  
+  
   #room-calender{
     width: 100%;
     padding : 3%;
@@ -682,11 +637,91 @@ footer{
     justify-content: space-between;
   }
   #room-calender img{
-    width: 50%;
+    width: 100%;
   }
   #calendar2{
-    display:inline-block
+    display: none;
   }
-
-
-}
+  
+  
+  
+  .room-rivew-detail{
+    display: block;
+  }
+  
+  
+  
+  
+  /* 3.5 후기파트 설정  */
+  .room-review{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .room-review>div{
+    padding: 3%;
+  }
+  .room-rivew-detail1{
+   border:none;
+  }
+  
+  .room-rivew-detail{
+    display: block;
+  }
+  div.user-profile{
+    width: 80px;
+    height: 80px; 
+    border-radius: 70%;
+    overflow: hidden;
+  }
+  div.user-profile img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #review-button{
+    display: block;
+    width: 20%;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+  }
+  
+  /* 테블릿화면 끝  */
+  footer{
+    width: 100%;
+    margin:0 auto;
+    padding-left: 2rem;
+    margin-top:1rem
+  }
+  }
+  
+  
+  
+  @media screen and (min-width:1024px) {
+    
+    .wrapper2{
+      max-width: 1000px;
+    }
+  /* 
+    달력 다시 보여주기  */
+  
+    #room-calender{
+      width: 100%;
+      padding : 3%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #room-calender img{
+      width: 50%;
+    }
+    #calendar2{
+      display:inline-block
+    }
+  
+  
+  }
+  
