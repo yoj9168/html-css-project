@@ -1,419 +1,418 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
 @media screen and (min-width: 320px),
   screen and (max-height: 1024px) and (orientation: landscape) {
-    body{
-        font-family: "Nanum Gothic", "sans-serif";
-    }
-    nav{
-        width: 100%;
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-bottom: 1px solid silver;
-    }
-    .backImg img{
-        display: inline;
-        width: 60px;
-        margin-top: 10px;
-        margin-left: -35vw;
-    }
-    .logoImg img{
-        display: none;
-    }
-    .main_menu{
-        display: none;
-    }
-    .navImg .messageImg{
-        content: url(../img/heart.png);
-        width: 50px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-    .navImg .mypageImg{
-        content: url(../img/share.png);
-        width: 60px;
-        margin-top: 1vh;
-        margin-right: 10px;
-    }
-    .infomation{
-        display: none;
-    }
-    main{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1vh 4vw;
-    }
-    .profileImg img{
-        width: 50%;
-        border-radius: 50%;
-    }
-    .managerChat{
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 3vh;
-    }
-    .managerChat img{
-        width: 30%;
-        height: 10%;
-        border-radius: 50%;
-        margin-right: 4vw;
-    }
-    .clientChat{
-        display: flex;
-        flex-direction: row;
-    }
-    .clientChat img{
-        width: 30%;
-        height: 18%;
-        border-radius: 50%;
-        margin-bottom: 3vh;
-        margin-right: 4vw;
-    }
-    .chatRoom:hover{
-        background-color: rgb(235, 235, 235);
-    }
-    .chatRoomLayout{
-        display: none;
-        border-right: 1px solid silver;
-        width: 100vw;
-    }
-    .chatRoomLayout a{
-        text-decoration: none;
-    }
-    .chatInfo{
-        border-bottom: 1px solid silver;
-    }
-    .chatContent{
-        border-bottom: 1px solid silver;
-    }
-    .chatContent:hover{
-        background-color: rgb(235, 235, 235);
-    }
-    .date{
-        text-align: center;
-    }
-    .chatInput{
-        height: 50px;
-        margin: 2vw;
-        width: 80vw;
-        display: flex;
-        flex-direction: row;
-    }
-    .chatInput #chatInputText{
-        width: 100vw;
-        height: 4vh;
-        border-radius: 40px;
-    }
-    .chatInput .chatSubmit{
-        margin-top: 0.7vh;
-        width: 15vw;
-        height: 3vh;
-        margin-left: 1.7vw;
-        border-radius: 10px;
-    }
-    .unvisible{
-        display: none;
-    }
-    .visible{
-        display: block;
-    }
-
+  body {
+    font-family: "Nanum Gothic", "sans-serif";
+  }
+  nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+  }
+  .backImg img {
+    display: inline;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: -32vw;
+  }
+  .logoImg img {
+    display: none;
+  }
+  .main_menu {
+    display: none;
+  }
+  .navImg .messageImg {
+    content: url(../img/heart.png);
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .navImg .mypageImg {
+    content: url(../img/share.png);
+    width: 60px;
+    margin-top: 1vh;
+    margin-right: 10px;
+  }
+  .infomation {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vh 4vw;
+  }
+  .profileImg img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  .managerChat {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3vh;
+  }
+  .managerChat img {
+    width: 30%;
+    height: 10%;
+    border-radius: 50%;
+    margin-right: 4vw;
+  }
+  .clientChat {
+    display: flex;
+    flex-direction: row;
+  }
+  .clientChat img {
+    width: 30%;
+    height: 18%;
+    border-radius: 50%;
+    margin-bottom: 3vh;
+    margin-right: 4vw;
+  }
+  .chatRoom:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .chatRoomLayout {
+    display: none;
+    border-right: 1px solid silver;
+    width: 100vw;
+  }
+  .chatRoomLayout a {
+    text-decoration: none;
+  }
+  .chatInfo {
+    border-bottom: 1px solid silver;
+  }
+  .chatContent {
+    border-bottom: 1px solid silver;
+  }
+  .chatContent:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .date {
+    text-align: center;
+  }
+  .chatInput {
+    height: 50px;
+    margin: 2vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .chatInput #chatInputText {
+    width: 100vw;
+    height: 4vh;
+    border-radius: 40px;
+  }
+  .chatInput .chatSubmit {
+    margin-top: 0.7vh;
+    width: 15vw;
+    height: 3vh;
+    margin-left: 1.7vw;
+    border-radius: 10px;
+  }
+  .unvisible {
+    display: none;
+  }
+  .visible {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px),
-    screen and (min-height: 760px) and (max-height: 1023px) and (orientation: landscape) {
-        body{
-            font-family: "Nanum Gothic", "sans-serif";
-        }
-        nav{
-            width: 100%;
-            height: 80px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            border-bottom: 1px solid silver;
-        }
-        .backImg{
-            display: none;
-        }
-        .logoImg img{
-            display: block;
-            content: url(../img/logo_small.png);
-            width: 40px;
-            margin: 20px 10px;
-        }
-        .navImg{
-            margin: 5px 30px;
-        }
-        .navImg .messageImg{
-            content: url(../img/message.png);
-            width: 35px;
-            margin-bottom: 30px;
-        }
-        .navImg .mypageImg{
-            content: url(../img/mypage_icon.png);
-            width: 35px;
-            margin-bottom: 30px;
-        }
-        .chatRoomLink{
-            text-decoration: none;
-            color: black;
-        }
-        .main_menu{
-            display: block;
-            text-decoration: none;
-            margin-top: 30px;
-            color: black;
-        }
-        .infomation{
-            display: none;
-        }
-        main{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 3vh 7vw;
-        }
-        .profileImg img{
-            width: 50%;
-            border-radius: 50%;
-        }
-        .managerChat{
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 3vh;
-        }
-        .managerChat img{
-            width: 30%;
-            height: 10%;
-            border-radius: 50%;
-            margin-right: 1vw;
-        }
-        .clientChat{
-            display: flex;
-            flex-direction: row;
-        }
-        .clientChat img{
-            width: 30%;
-            height: 18%;
-            border-radius: 50%;
-            margin-bottom: 3vh;
-            margin-right: 2vw;
-        }
-        .chatRoomLayout{
-            display: block;
-            height: 70vh;
-            border-right: 1px solid silver;
-            overflow: scroll;
-            width: 30vw;
-        }
-        .chatRoom{
-            border-bottom: 1px solid silver;
-            margin-bottom: 3vh;
-        }
-        .chatRoom:hover{
-            background-color: rgb(229, 229, 229);
-        }
-        .chatLayout{           
-            height: 100vh;
-            width: 50vw;
-            overflow: scroll;
-            padding: 3vh;
-        }
-        .chatInfo{
-            border-bottom: 1px solid silver;
-        }
-        .chatContent{
-            border-bottom: 1px solid silver;
-        }
-        .chatContent:hover{
-            background-color: rgb(235, 235, 235);
-        }
-        .date{
-            text-align: center;
-        }
-        .chatInput{
-            width: 40px;
-            height: 50px;
-            margin: 40px;
-            width: 50vw;
-        }
-        .chatInput #chatInputText{
-            width: 30vw;
-            height: 4vh;
-            border-radius: 40px;
-        }
-        .chatInput .chatSubmit{
-            width: 5vw;
-            height: 3vh;
-            margin-left: 0.5vw;
-            border-radius: 10px;
-        }
+  screen and (min-height: 760px) and (max-height: 1023px) and (orientation: landscape) {
+  body {
+    font-family: "Nanum Gothic", "sans-serif";
+  }
+  nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+  }
+  .backImg {
+    display: none;
+  }
+  .logoImg img {
+    display: block;
+    content: url(../img/logo_small.png);
+    width: 40px;
+    margin: 20px 10px;
+  }
+  .navImg {
+    margin: 5px 30px;
+  }
+  .navImg .messageImg {
+    content: url(../img/message.png);
+    width: 35px;
+    margin-bottom: 30px;
+  }
+  .navImg .mypageImg {
+    content: url(../img/mypage_icon.png);
+    width: 35px;
+    margin-bottom: 30px;
+  }
+  .chatRoomLink {
+    text-decoration: none;
+    color: black;
+  }
+  .main_menu {
+    display: block;
+    text-decoration: none;
+    margin-top: 30px;
+    color: black;
+  }
+  .infomation {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vh 7vw;
+  }
+  .profileImg img {
+    width: 50%;
+    border-radius: 50%;
+  }
+  .managerChat {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3vh;
+  }
+  .managerChat img {
+    width: 30%;
+    height: 10%;
+    border-radius: 50%;
+    margin-right: 1vw;
+  }
+  .clientChat {
+    display: flex;
+    flex-direction: row;
+  }
+  .clientChat img {
+    width: 30%;
+    height: 18%;
+    border-radius: 50%;
+    margin-bottom: 3vh;
+    margin-right: 2vw;
+  }
+  .chatRoomLayout {
+    display: block;
+    height: 70vh;
+    border-right: 1px solid silver;
+    overflow: scroll;
+    width: 30vw;
+  }
+  .chatRoom {
+    border-bottom: 1px solid silver;
+    margin-bottom: 3vh;
+  }
+  .chatRoom:hover {
+    background-color: rgb(229, 229, 229);
+  }
+  .chatLayout {
+    height: 100vh;
+    width: 50vw;
+    overflow: scroll;
+    padding: 3vh;
+  }
+  .chatInfo {
+    border-bottom: 1px solid silver;
+  }
+  .chatContent {
+    border-bottom: 1px solid silver;
+  }
+  .chatContent:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .date {
+    text-align: center;
+  }
+  .chatInput {
+    width: 40px;
+    height: 50px;
+    margin: 40px;
+    width: 50vw;
+  }
+  .chatInput #chatInputText {
+    width: 30vw;
+    height: 4vh;
+    border-radius: 40px;
+  }
+  .chatInput .chatSubmit {
+    width: 5vw;
+    height: 3vh;
+    margin-left: 0.5vw;
+    border-radius: 10px;
+  }
 }
 @media screen and (min-width: 1024px),
-    screen and (max-height: 1024px) and (orientation: landscape) {
-        body{
-            font-family: "Nanum Gothic", "sans-serif";
-        }
-        nav{
-            width: 100%;
-            height: 80px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            border-bottom: 1px solid silver;
-        }
-        .backImg{
-            display: none;
-        }
-        .logoImg img{
-            content: url(../img/logo.png);
-            width: 170px;
-            margin-left: 40px;
-            margin-top: 0px;
-        }
-        .navImg{
-            margin: 5px 30px;
-        }
-        .navImg .messageImg{
-            content: url(../img/message.png);
-            width: 35px;
-            margin-bottom: 30px;
-        }
-        .navImg .mypageImg{
-            content: url(../img/mypage_icon.png);
-            width: 35px;
-            margin-bottom: 30px;
-        }
-        .chatRoomLink{
-            text-decoration: none;
-            color: black;
-        }
-        .chatRoom:hover{
-            background-color: rgb(229, 229, 229);
-        }
-        .main_menu{
-            text-decoration: none;
-            margin-top: 30px;
-            color: black;
-        }
-        main{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 3vh 7vw;
-        }
-        .profileImg img{
-            width: 35%;
-            border-radius: 50%;
-        }
-        .managerChat{
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 3vh;
-        }
-        .managerChat img{
-            width: 20%;
-            height: 10%;
-            border-radius: 50%;
-            margin-right: 1vw;
-        }
-        .clientChat{
-            display: flex;
-            flex-direction: row;
-        }
-        .clientChat img{
-            width: 17%;
-            height: 18%;
-            border-radius: 50%;
-            margin-bottom: 3vh;
-            margin-right: 2vw;
-        }
-        .chatRoomLayout{
-            display: block;
-            height: 80vh;
-            border-right: 1px solid silver;
-            overflow: scroll;
-            width: 17vw;
-        }
-        .chatRoom{
-            border-bottom: 1px solid silver;
-            margin-bottom: 3vh;
-        }
-        .chatLayout{           
-            height: 100vh;
-            width: 40vw;
-            overflow: scroll;
-            padding: 3vh;
-        }
-        .chatInfo{
-            border-bottom: 1px solid silver;
-        }
-        .chatContent{
-            border-bottom: 1px solid silver;
-        }
-        .chatContent:hover{
-            background-color: rgb(235, 235, 235);
-        }
-        .date{
-            text-align: center;
-        }
-        .chatInput{
-            height: 50px;
-            width: 80vw;
-        }
-        .chatInput #chatInputText{
-            margin-left: -3vw;
-            width: 30vw;
-            height: 4vh;
-            border-radius: 40px;
-        }
-        .chatInput .chatSubmit{
-            width: 5vw;
-            height: 3vh;
-            border-radius: 10px;
-        }
-        .check{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 0 5vw;
-        }
-        .infomation{
-            width: 30vw;
-            height: 100vh;
-            overflow: scroll;
-            padding: 0 3vw;
-            display: block;
-        }
-        .button{
-            width: 25vw;
-            height: 4vh;
-            border-radius: 20px;
-            margin-bottom: 2vh;
-        }
-        .billing div a{
-            text-decoration: none;
-        }
-        .icon{
-            width: 1vw;
-        }
-        
-        @keyframes changeImage {
-            0%{
-                opacity: 1;
-            }
-            50%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-                content: url(../img/laHouse2.jpg);
-            }
-        }
-        .houseImg:hover{
-            animation-fill-mode: forwards; /* 애니메이션이 끝났을 때 모습을 유지하도록 */
-            animation: changeImage 3s linear; /* 일정한 속도로 애니메이션 */
-        }
+  screen and (max-height: 1024px) and (orientation: landscape) {
+  body {
+    font-family: "Nanum Gothic", "sans-serif";
   }
+  nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+  }
+  .backImg {
+    display: none;
+  }
+  .logoImg img {
+    content: url(../img/logo.png);
+    width: 170px;
+    margin-left: 40px;
+    margin-top: 0px;
+  }
+  .navImg {
+    margin: 5px 30px;
+  }
+  .navImg .messageImg {
+    content: url(../img/message.png);
+    width: 35px;
+    margin-bottom: 30px;
+  }
+  .navImg .mypageImg {
+    content: url(../img/mypage_icon.png);
+    width: 35px;
+    margin-bottom: 30px;
+  }
+  .chatRoomLink {
+    text-decoration: none;
+    color: black;
+  }
+  .chatRoom:hover {
+    background-color: rgb(229, 229, 229);
+  }
+  .main_menu {
+    text-decoration: none;
+    margin-top: 30px;
+    color: black;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vh 7vw;
+  }
+  .profileImg img {
+    width: 35%;
+    border-radius: 50%;
+  }
+  .managerChat {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3vh;
+  }
+  .managerChat img {
+    width: 20%;
+    height: 10%;
+    border-radius: 50%;
+    margin-right: 1vw;
+  }
+  .clientChat {
+    display: flex;
+    flex-direction: row;
+  }
+  .clientChat img {
+    width: 17%;
+    height: 18%;
+    border-radius: 50%;
+    margin-bottom: 3vh;
+    margin-right: 2vw;
+  }
+  .chatRoomLayout {
+    display: block;
+    height: 80vh;
+    border-right: 1px solid silver;
+    overflow: scroll;
+    width: 17vw;
+  }
+  .chatRoom {
+    border-bottom: 1px solid silver;
+    margin-bottom: 3vh;
+  }
+  .chatLayout {
+    height: 100vh;
+    width: 40vw;
+    overflow: scroll;
+    padding: 3vh;
+  }
+  .chatInfo {
+    border-bottom: 1px solid silver;
+  }
+  .chatContent {
+    border-bottom: 1px solid silver;
+  }
+  .chatContent:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  .date {
+    text-align: center;
+  }
+  .chatInput {
+    height: 50px;
+    width: 80vw;
+  }
+  .chatInput #chatInputText {
+    margin-left: -3vw;
+    width: 30vw;
+    height: 4vh;
+    border-radius: 40px;
+  }
+  .chatInput .chatSubmit {
+    width: 5vw;
+    height: 3vh;
+    border-radius: 10px;
+  }
+  .check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5vw;
+  }
+  .infomation {
+    width: 30vw;
+    height: 100vh;
+    overflow: scroll;
+    padding: 0 3vw;
+    display: block;
+  }
+  .button {
+    width: 25vw;
+    height: 4vh;
+    border-radius: 20px;
+    margin-bottom: 2vh;
+  }
+  .billing div a {
+    text-decoration: none;
+  }
+  .icon {
+    width: 1vw;
+  }
+
+  @keyframes changeImage {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      content: url(../img/laHouse2.jpg);
+    }
+  }
+  .houseImg:hover {
+    animation-fill-mode: forwards; /* 애니메이션이 끝났을 때 모습을 유지하도록 */
+    animation: changeImage 3s linear; /* 일정한 속도로 애니메이션 */
+  }
+}
