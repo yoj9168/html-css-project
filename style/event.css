@@ -12,6 +12,33 @@ and (orientation: landscape){
         align-items: center;
     }
 
+    .downnav{
+        margin-right: 50px;
+    }
+
+    .starticon1 a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+    span.starticon1{
+        display: block;
+        position: sticky;
+        width: 180px;
+        height: 50px;
+        line-height: 48px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bolder;
+        border-radius: 20px;
+        color: white;
+        background-color:#e61e4d;
+        margin-top: 15px;
+        bottom: 0;
+        z-index: 100;
+    }
+
     div.main{
         display: block;
     }
@@ -357,9 +384,13 @@ and (orientation: landscape){
     .mapmobile1{display: none;}
 }
 
+
 @media screen and (min-width:768px),
 screen and (min-height:760px) and (orientation: landscape){
 
+    .downnav{
+        display: none;
+    }
 
     .logo{
         margin-top: 4px;
@@ -386,7 +417,7 @@ screen and (min-height:760px) and (orientation: landscape){
         font-size: 18px;
         border-radius: 20px;
         color: white;
-        background: radial-gradient(circle at center, #e61e4d 27.5%,#e31c5f 40%,#d70466 57.5%,#bd1e59 75%,#bd1e59 100%);
+        background: #e61e4d;
     }
 
 
