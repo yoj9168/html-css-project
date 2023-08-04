@@ -33,8 +33,8 @@
       
       width: 100%;
       padding-left: 0%;
-      margin: 0 auto;
-      margin-left: 5%;
+      
+      /* margin-left: 5%; */
       /* width: 90%; */
       /* display: flex;
       flex-direction: column;
@@ -193,6 +193,10 @@
     height: 80px; 
     border-radius: 70%;
     overflow: hidden;
+    box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.15);
+  
   }
   #room-host-img img{
     object-fit: cover;
@@ -228,7 +232,7 @@
   /* 하단 파트 크기 조정  */
   .room-detail-bottom{
     
-    width:90%;
+    width:100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -317,11 +321,16 @@
     height: 80px; 
     border-radius: 70%;
     overflow: hidden;
+    box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.15);
+  
   }
   div.user-profile img{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    
   }
   #review-btn-wrapper{
     padding:1rem 0 0 0;
@@ -342,12 +351,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-top: 1px solid #9f9d9d;
+    padding-top: 3%;
   }
   #room-host-img2{
     width: 80px;
     height: 80px; 
     border-radius: 70%;
+    margin-right: 5%;
     overflow: hidden;
+    box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 5px 4px 5px 0px rgba(0,0,0,0.15);
   }
   #room-host-img2 img{
     object-fit: cover;
@@ -370,12 +385,15 @@
     padding-left : 1rem;
   }
   
-  
+  .dummy{
+    visibility: hidden;
+  }
   
   #review-button:hover{
     background-color: #f8f3f3;
   }
   
+
   
   }
   
@@ -397,7 +415,7 @@
   }
   .wrapper2{
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   
   }
   header{
@@ -406,43 +424,59 @@
     background-color: white;
   }
   .logoImg{
-    position: absolute;
+    
     right: 80%;
   }
   
   .main_menu{
-    position: absolute;
+   
     right:40%;
-    top:0.6%;
+    top:10%;
     text-align: center;
   }
-  
+  #position-swtich{
+  position: absolute;
+  top:3.5%;
+  /* left:50% */
+  }
   
   .header-nav-icons{
     display: inline-block;
+
     
   }
+
   #back-icon{
     display: none;
   }
   #back-img{
     border: none;
+    display: none;
   }
   div.social1{
     display: none;
   }
+
+
   nav{
     width: 100%;
-    
     height: 80px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     position: static;
+  
+    
     top: initial;
+ 
   }
   .logoImg img{
     width: 170px;
+   
+  }
+  div.navImg {
+    margin-left: 10%;
+    
   }
   .navImg img{
     width: 45px;
@@ -466,19 +500,24 @@
   div.home_title{
     width: 70%;
   }
+ #go-review{
+  text-decoration: none;
+  color: #FF5A5F;
+ }
+
   div.social2 {
     
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left:3px;
+    margin-left:2px;
     margin-top: auto
   
     
   }
   div.social2 ul{
     list-style: none;
-  
+    margin: 0;
     
    
   }
@@ -490,10 +529,11 @@
   }
   div.social2 ul li {
     display: inline-block;
+    margin:0;
   
   }
   div.social2 ul li a{
-    padding: 0.4rem;
+    padding: 0.3rem;
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -591,8 +631,8 @@
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
-    margin-left : 5%;
-    margin-right: 5%;
+    margin-left : 3%;
+    margin-right: 0%;
     position:sticky;
     top: 0;
     /* bottom: 0; */
@@ -740,7 +780,7 @@
   @media screen and (min-width:1024px) {
     
     .wrapper2{
-      max-width: 1000px;
+      max-width: 100%;
     }
   /* 
     달력 다시 보여주기  */
