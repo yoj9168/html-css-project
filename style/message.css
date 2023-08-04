@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
   }
   .backImg img {
     display: inline;
@@ -76,17 +76,17 @@
   }
   .chatRoomLayout {
     display: none;
-    border-right: 1px solid silver;
+    border-right: 1px solid #ddd;
     width: 100vw;
   }
   .chatRoomLayout a {
     text-decoration: none;
   }
   .chatInfo {
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
   }
   .chatContent {
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
   }
   .chatContent:hover {
     background-color: rgb(235, 235, 235);
@@ -131,7 +131,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
   }
   .backImg {
     display: none;
@@ -203,12 +203,12 @@
   .chatRoomLayout {
     display: block;
     height: 70vh;
-    border-right: 1px solid silver;
+    border-right: 1px solid #ddd;
     overflow: scroll;
     width: 30vw;
   }
   .chatRoom {
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
     margin-bottom: 3vh;
   }
   .chatRoom:hover {
@@ -221,10 +221,10 @@
     padding: 3vh;
   }
   .chatInfo {
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
   }
   .chatContent {
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
   }
   .chatContent:hover {
     background-color: rgb(235, 235, 235);
@@ -261,7 +261,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
   }
   .backImg {
     display: none;
@@ -332,12 +332,12 @@
   .chatRoomLayout {
     display: block;
     height: 80vh;
-    border-right: 1px solid silver;
+    border-right: 1px solid #ddd;
     overflow: scroll;
     width: 17vw;
   }
   .chatRoom {
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
     margin-bottom: 3vh;
   }
   .chatLayout {
@@ -347,10 +347,10 @@
     padding: 3vh;
   }
   .chatInfo {
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
   }
   .chatContent {
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid #ddd;
   }
   .chatContent:hover {
     background-color: rgb(235, 235, 235);
