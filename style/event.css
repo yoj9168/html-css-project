@@ -21,6 +21,10 @@ and (orientation: landscape){
         color: white;
     }
 
+    .starticon a{
+        text-decoration: none;
+        color: white;
+    }
 
     span.starticon1{
         display: block;
@@ -570,4 +574,8 @@ screen and (min-height:760px) and (orientation: landscape){
         border: 2px solid gray;
         margin-bottom: 60px;
       }
+
+
     }
+
+
