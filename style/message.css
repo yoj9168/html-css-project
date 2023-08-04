@@ -398,4 +398,21 @@
         .icon{
             width: 1vw;
         }
+        
+        @keyframes changeImage {
+            0%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+                content: url(../img/laHouse2.jpg);
+            }
+        }
+        .houseImg:hover{
+            animation-fill-mode: forwards; /* 애니메이션이 끝났을 때 모습을 유지하도록 */
+            animation: changeImage 3s linear; /* 일정한 속도로 애니메이션 */
+        }
   }
