@@ -55,8 +55,8 @@
   }
 
   .iconnav {
-    border-top: 1px solid silver;
-    border-bottom: 1px solid silver;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
   }
 
   .iconlist {
@@ -245,8 +245,8 @@
       padding: 10px 20px 10px 40px;
       flex-wrap: wrap;
       margin: 0px 20px;
-      border-top: 1px solid silver;
-      border-bottom: 1px solid silver;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
     }
 
     .iconnav {
