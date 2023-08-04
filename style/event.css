@@ -13,7 +13,14 @@ and (orientation: landscape){
     }
 
     div.main{
-        display: none;
+        display: block;
+    }
+
+    .main img{
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
     }
 
     .nav{
@@ -34,6 +41,7 @@ and (orientation: landscape){
         display: flex;
         justify-content: space-between; /* 요소들을 양쪽 끝으로 정렬 */
         margin-right:0;
+        margin-bottom: 0;
     }
 
     .nav ul li{
@@ -48,7 +56,6 @@ and (orientation: landscape){
 
     .nav p{
         display: none;
-        /* display: block; */
         margin-left: 4px;
         font-size: 25px;
         font-weight: bolder; 
@@ -57,7 +64,6 @@ and (orientation: landscape){
     }
 
     span.starticon{
-        /* display: block; */
         display: none;
         width: 210px;
         height: 50px;
@@ -86,11 +92,12 @@ and (orientation: landscape){
         text-align: center;
     }
 
-    header h1{
+    h1{
         font-family: normal;
         color: #FF385C;
-        font-size: 35px;
+        font-size: 32px;
         margin-bottom: 40px;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.521);
     }
 
     header a{
@@ -105,7 +112,7 @@ and (orientation: landscape){
     }
 
     p.p1{
-        margin-top: 0px;
+        margin-top: 5px;
         margin-bottom: 5px;
         font-size: 17px;
     }
@@ -115,19 +122,9 @@ and (orientation: landscape){
         font-size: 17px;
     }
 
-    .map{
-        display: flex;
-        max-width: 100%;
-        border: 2px solid gray;
-        border-radius: 30px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        
-    }
-
     .map p{
         font-weight: bold;
-        margin-top: 9px;
+        margin-top: 12px;
         font-size: 12px;
     }
 
@@ -136,21 +133,39 @@ and (orientation: landscape){
         height: 44px;
         margin-right: 19px;
         margin-left: 15px;
-        margin-top: 3px;
+        margin-top: 15px;
     }
 
-    .mapmobile, .map{
+    .mapmobile{
+        width: 50vw;
+        margin-top: 30px;
         display: flex;
-        max-width: 100%; /* 작은 화면에서 이미지 크기 조절 */
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 0px 5px 5px rgba(0, 1, 4, 10);
+        padding: 2px;
+        margin-bottom: 50px;
+        border: 2px solid gray;
+        margin-left: 20%;
+    }
+
+    .map{
+        width: 50vw;
+        margin-top: 30px;
+        display: flex;
+        max-width: 100%;
         height: auto;
         border-radius: 20px;
         box-shadow: 0px 2px 4px rgba(0, 1, 4, 10);
         padding: 2px;
         margin-bottom: 50px;
+        border: 2px solid gray;
+        margin-left: 15%;
     }
 
-    .start h3{
-        font-size: 35px;
+    p.h3{
+        font-size: 27px;
         text-align: center;
         letter-spacing: 3px;
         font-weight: bolder;
@@ -164,15 +179,15 @@ and (orientation: landscape){
     }
 
     .starter{
-        height: auto;
-        width: 256px;
-        margin-bottom: 10px;
+        height: 250px;
+        width: 500px;
     }
 
     section ul{
+        display: block;
         list-style: none;
         padding: 0;
-        margin-top: 0;;
+        margin-top: 0;
         margin-bottom: 80px;
     }
 
@@ -182,6 +197,13 @@ and (orientation: landscape){
         font-size: 20px;
     }
 
+    .section{
+        display: block;
+    }
+
+    .section p{
+        font-size: 20px;
+    }
 
 .table{
     width: auto;
@@ -248,13 +270,12 @@ and (orientation: landscape){
   .p1{
     font-size: 30px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 
     button{
         margin-left: 50px;
         margin-top: 20px;
-
         padding: 10px 20px;
         font-size: 16px;
         font-weight: bold;
@@ -278,7 +299,6 @@ and (orientation: landscape){
         padding: 0;
         display: flex;
         justify-content: space-between;
-        /* flex-wrap: wrap; */
     }
 
     .superhost ul li{
@@ -333,23 +353,31 @@ and (orientation: landscape){
     div.border{
         border: 1px solid darkgray;
     }
+
+    .mapmobile1{display: none;}
 }
 
 @media screen and (min-width:768px),
 screen and (min-height:760px) and (orientation: landscape){
+
+
+    .logo{
+        margin-top: 4px;
+    }
 
     .nav p{
         display: block;
         margin-left: 4px;
         font-size: 17px;
         font-weight: bold; 
-        margin-top: 32px;
+        margin-top: 30px;
         margin-right: 24px;
     }
 
 
     span.starticon{
         font-family: normal;
+        margin-top: 15px;
         display: block;
         width: 180px;
         height: 50px;
@@ -361,19 +389,15 @@ screen and (min-height:760px) and (orientation: landscape){
         background: radial-gradient(circle at center, #e61e4d 27.5%,#e31c5f 40%,#d70466 57.5%,#bd1e59 75%,#bd1e59 100%);
     }
 
-    div.main{
-        display: block;
+
+    .starter{
+        height: 700px;
+        width: 1200px;
     }
 
-    .main img{
-        margin-top: 20px;
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 50px;
-    }
-
-    header h1{
+    h1{
         margin-bottom: 20px;
+        font-size: 30px;
     }
 
     header.p1{
@@ -391,4 +415,128 @@ screen and (min-height:760px) and (orientation: landscape){
 
 @media screen and (min-width:1024px){
 
+    .main img{
+        margin-top: 0px;
+        width: 100%;
+        height: auto;
+        max-height: 1080px;
+        margin-bottom: 50px;
+    }
+    
+    h1{
+        font-size: 50px;
+    }
+
+    p.p1{
+        margin-top: 30px;
+        font-size: 26px;
+    }
+    
+    header a{
+        font-family: normal;
+        font-size: 25px;
+    }
+
+    span.income{
+        font-size: 30px;
+    }
+
+    p.p2{
+        margin-top: 8px;
+    }
+
+    p.h3{
+        font-size: 40px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+
+    section h5{
+        font-size: 30px;
+    }
+
+    section ul{
+        padding: 0 150px;
+    }
+
+    .section p{
+        font-size: 28x;
+    }
+
+    .tableset{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-bottom: 20px;
+    }
+    
+    .mapmobile{
+        display:none;
+    }
+
+    p.p1{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+    }
+
+    p.p2{
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-bottom: 20px;
+    }
+
+    button{
+        margin-left: 50px;
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-size: 20px;
+        
 }
+    .superhost{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    img.superhost1 {
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        border-radius: 50%;
+      }
+    
+      img.superhost2 {
+        width: 320px;
+        height: 320px;
+        background-size: cover;
+        border-radius: 50%;
+      }
+
+      .map{
+        margin-top: 50px;
+        width: 70%; 
+        padding: 3px;
+      }
+
+      .map p{
+        font-size: 23px;
+      }
+      .mapmobile1{
+        display: flex;
+        position: center;
+        width: 70%;
+        max-width: 700px;
+        height: 500px;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: 0px 2px 4px rgba(0, 1, 4, 10);
+        padding: 2px;
+        border: 2px solid gray;
+        margin-bottom: 60px;
+      }
+    }
