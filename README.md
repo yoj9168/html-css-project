@@ -37,9 +37,6 @@
 |----|---|------------|
 |김혜연|메인페이지|
 |유오준|채팅페이지|message.html, message2.html, message3.html, style/message.css, js/message.js 작성
-프로토 타입은 제가 개발하기로 한 message.html 부분을 fima를 사용하여 PC, 태블릿, 모바일로 나누어서 완성
-발표 부분에서는 팀의 공동 목표 및 개발 과정을 설명, 발표 자료도 그 부분을 준비
-웹 페이지의 통일성을 유지하기 위해 개발한 message.html의 nav를 detail.html과 main.html의 PC, 태블릿, 모바일 부분에 적용
-팀 전체의 전반적인 코드 형상 관리를 위해 노력
+프로토 타입은 제가 개발하기로 한 message.html 부분을 fima를 사용하여 PC, 태블릿, 모바일로 나누어서 완성. 발표 부분에서는 팀의 공동 목표 및 개발 과정을 설명, 발표 자료도 그 부분을 준비. 웹 페이지의 통일성을 유지하기 위해 개발한 message.html의 nav를 detail.html과 main.html의 PC, 태블릿, 모바일 부분에 적용. 팀 전체의 전반적인 코드 형상 관리를 위해 노력
 |장정은|이벤트페이지|event.html, event.css 작성. 상단 event.html nav 작성 후 나머지 페이지 nav바와 위치 맞춤. event 페이지 와이어프레임 작성(Figma). ppt 협업 과정 작성.
 |조하영|상세페이지|
